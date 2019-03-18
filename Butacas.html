@@ -1,0 +1,773 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Butacas </title>
+        <script src="jquery/jquery-3.2.1.min.js"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+        	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+	<body onload="cargardatosdelapelicula()">
+	<div class="contenedor">
+		<br>
+		<div class="contenido">
+            <table id="t1"><tr><td>
+           <div class="post-body" id="H1" onclick="mostrar('H1')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               H1
+                </div></td>
+                <td>
+           <div class="post-body" id="H2" onclick="mostrar('H2')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               H2
+                </div></td>
+                <td>
+           <div class="post-body" id="H3" onclick="mostrar('H3')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               H3
+                </div></td>
+                <td>
+           <div class="post-body" id="H4" onclick="mostrar('H4')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               H4
+                </div></td>
+                </tr>
+                <tr><td>
+           <div class="post-body" id="G1" onclick="mostrar('G1')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               G1
+                </div></td>
+                <td>
+           <div class="post-body" id="G2" onclick="mostrar('G2')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               G2
+                </div></td>
+                <td>
+           <div class="post-body" id="G3" onclick="mostrar('G3')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               G3
+                </div></td>
+                <td>
+           <div class="post-body" id="G4" onclick="mostrar('G4')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               G4
+                </div></td>
+                </tr>
+                <tr><td>
+           <div class="post-body" id="F1" onclick="mostrar('F1')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               F1
+                </div></td>
+                <td>
+           <div class="post-body" id="F2" onclick="mostrar('F2')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               F2
+                </div></td>
+                <td>
+           <div class="post-body" id="F3" onclick="mostrar('F3')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               F3
+                </div></td>
+                <td>
+           <div class="post-body" id="F4" onclick="mostrar('F4')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               F4
+                </div></td>
+                </tr>
+                <tr><td>
+           <div class="post-body" id="E1" onclick="mostrar('E1')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               E1
+                </div></td>
+                <td>
+           <div class="post-body" id="E2" onclick="mostrar('E2')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               E2
+                </div></td>
+                <td>
+           <div class="post-body" id="E3" onclick="mostrar('E3')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               E3
+                </div></td>
+                <td>
+           <div class="post-body" id="E4" onclick="mostrar('E4')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               E4
+                </div></td>
+                </tr>
+                <tr><td>
+           <div class="post-body" id="D1" onclick="mostrar('D1')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               D1
+                </div></td>
+                <td>
+           <div class="post-body" id="D2" onclick="mostrar('D2')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               D2
+                </div></td>
+                <td>
+           <div class="post-body" id="D3" onclick="mostrar('D3')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               D3
+                </div></td>
+                <td>
+           <div class="post-body" id="D4" onclick="mostrar('D4')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               D4
+                </div></td>
+                </tr>
+                <tr><td>
+           <div class="post-body" id="C1" onclick="mostrar('C1')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               C1
+                </div></td>
+                <td>
+           <div class="post-body" id="C2" onclick="mostrar('C2')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               C2
+                </div></td>
+                <td>
+           <div class="post-body" id="C3" onclick="mostrar('C3')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               C3
+                </div></td>
+                <td>
+           <div class="post-body" id="C4" onclick="mostrar('C4')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               C4
+                </div></td>
+                </tr>
+                <tr><td>
+           <div class="post-body" id="B1" onclick="mostrar('B1')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               B1
+                </div></td>
+                <td>
+           <div class="post-body" id="B2" onclick="mostrar('B2')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               B2
+                </div></td>
+                <td>
+           <div class="post-body" id="B3" onclick="mostrar('B3')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               B3
+                </div></td>
+                <td>
+           <div class="post-body" id="B4" onclick="mostrar('B4')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               B4
+                </div></td>
+                </tr>
+                <tr><td>
+           <div class="post-body" id="A1" onclick="mostrar('A1')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               A1
+                </div></td>
+                <td>
+           <div class="post-body" id="A2" onclick="mostrar('A2')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               A2
+                </div></td>
+                <td>
+           <div class="post-body" id="A3" onclick="mostrar('A3')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               A3
+                </div></td>
+                <td>
+           <div class="post-body" id="A4" onclick="mostrar('A4')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               A4
+                </div></td>
+                </tr>
+            </table>
+            <table id="t2">
+                <tr>
+                  <tr>
+                    <td>
+</td><td><br><br><br><br></td>
+                </tr>
+              </tr>
+                <tr>
+                <td>
+                <td>
+           <div class="post-body" id="D5" onclick="mostrar('D5')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               D5
+                </div></td>
+                </tr>
+                <tr>
+                <td>
+           <div class="post-body" id="C5" onclick="mostrar('C5')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               C5
+                </div></td>
+                    <td>
+           <div class="post-body" id="C6" onclick="mostrar('C6')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               C6
+                </div></td>
+                </tr>
+                <tr>
+                <td>
+           <div class="post-body" id="B5" onclick="mostrar('B5')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               B5
+                </div></td>
+                    <td>
+           <div class="post-body" id="B6" onclick="mostrar('B6')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               B6
+                </div></td>
+                </tr>
+                <tr>
+                <td>
+           <div class="post-body" id="A5" onclick="mostrar('A5')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               A5
+                </div></td>
+                    <td>
+           <div class="post-body" id="A6" onclick="mostrar('A6')">
+               <img src="asiento.png" width="50px" height="50px" />
+               <br>
+               A6
+                </div></td>
+                </tr>
+            </table>
+	</div>
+        </div>
+        <div id="c1">
+        <span id="titulodelapelicula"></span>
+        </div>
+        <!-- Div emergente -->
+   
+        <div class="popup" id="popup" style="display: none">
+            <div class="cuerpodelpop">
+              <div class="numero" id="padre"><span id="Asiento"></span></div>
+                <div class="datodelpop">
+                    <input id="name" type="text" placeholder="Nombre">
+                </div>
+                <br>
+                <div class="datodelpop">
+                    <input id="seccion" type="text" placeholder="Sección">
+                </div>
+                <br>
+                <div class="datodelpop">
+                    <input id="carne" type="number" placeholder="Carné">
+                </div>
+                <br>
+                <div class="datodelpop">
+                    <button id="bb" onclick="cargadatosdelabutaca()">Guardar</button>
+                    <button id="bb" onclick="cancelar()">Cancelar</button>
+                </div>
+            </div>
+        </div>
+        <script>
+ function cargardatosdelapelicula()
+    
+    {
+        
+        var pelicula = JSON.parse(localStorage.getItem('peliculaseleccionada'))
+        
+        document.getElementById("titulodelapelicula").innerHTML += pelicula[0].NOMBRE + "<hr><p>Tanda: "+pelicula[0].FECHA+ " Inicia: "+pelicula[0].HORAINICIO +": "+pelicula[0].MINUTOINICIO+"<p/>";
+        
+        
+        
+        
+    }
+    function mostrar(value){
+document.getElementById('popup').style.display = 'block';
+var numerodelabutaca=value;
+document.getElementById('Asiento').innerHTML= numerodelabutaca;
+}
+            function cargadatosdelabutaca(){
+    
+    
+    
+    
+    //el id de la butaca se los pasa como parametro desde el modal al que presiono guardar
+    var peliculaencache = JSON.parse(localStorage.getItem('peliculaseleccionada'))
+       switch(document.getElementById('Asiento').innerHTML)
+           {
+               case "A1":
+                   peliculaencache[0].ASIENTOS.A1.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.A1.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.A1.SECCION= document.getElementById("seccion").value;
+                   break;
+               case "A2":
+                   peliculaencache[0].ASIENTOS.A2.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.A2.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.A2.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "A3":
+                   peliculaencache[0].ASIENTOS.A3.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.A3.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.A3.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "A4":
+                   peliculaencache[0].ASIENTOS.A4.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.A4.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.A4.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "A5":
+                   peliculaencache[0].ASIENTOS.A5.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.A5.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.A5.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "A6":
+                   peliculaencache[0].ASIENTOS.A6.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.A6.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.A6.SECCION= document.getElementById("seccion").value;
+                   break;
+                    case "B1":
+                   peliculaencache[0].ASIENTOS.B1.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.B1.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.B1.SECCION= document.getElementById("seccion").value;
+                   break;
+               case "B2":
+                   peliculaencache[0].ASIENTOS.B2.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.B2.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.B2.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "B3":
+                   peliculaencache[0].ASIENTOS.B3.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.B3.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.B3.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "B4":
+                   peliculaencache[0].ASIENTOS.B4.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.B4.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.B4.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "B5":
+                   peliculaencache[0].ASIENTOS.B5.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.B5.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.B5.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "B6":
+                   peliculaencache[0].ASIENTOS.B6.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.B6.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.B6.SECCION= document.getElementById("seccion").value;
+                   break;
+                    case "C1":
+                   peliculaencache[0].ASIENTOS.C1.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.C1.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.C1.SECCION= document.getElementById("seccion").value;
+                   break;
+               case "C2":
+                   peliculaencache[0].ASIENTOS.C2.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.C2.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.C2.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "C3":
+                   peliculaencache[0].ASIENTOS.C3.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.C3.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.C3.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "C4":
+                   peliculaencache[0].ASIENTOS.C4.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.C4.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.C4.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "C5":
+                   peliculaencache[0].ASIENTOS.C5.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.C5.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.C5.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "C6":
+                   peliculaencache[0].ASIENTOS.C6.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.C6.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.C6.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "D1":
+                   peliculaencache[0].ASIENTOS.D1.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.D1.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.D1.SECCION= document.getElementById("seccion").value;
+                   break;
+               case "D2":
+                   peliculaencache[0].ASIENTOS.D2.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.D2.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.D2.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "D3":
+                   peliculaencache[0].ASIENTOS.D3.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.D3.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.D3.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "D4":
+                   peliculaencache[0].ASIENTOS.D4.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.D4.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.D4.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "D5":
+                   peliculaencache[0].ASIENTOS.D5.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.D5.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.D5.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "E1":
+                   peliculaencache[0].ASIENTOS.E1.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.E1.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.E1.SECCION= document.getElementById("seccion").value;
+                   break;
+               case "E2":
+                   peliculaencache[0].ASIENTOS.E2.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.E2.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.E2.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "E3":
+                   peliculaencache[0].ASIENTOS.E3.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.E3.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.E3.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "E4":
+                   peliculaencache[0].ASIENTOS.E4.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.E4.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.E4.SECCION= document.getElementById("seccion").value;
+                   break;
+                    case "F1":
+                   peliculaencache[0].ASIENTOS.F1.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.F1.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.F1.SECCION= document.getElementById("seccion").value;
+                   break;
+               case "F2":
+                   peliculaencache[0].ASIENTOS.F2.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.F2.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.F2.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "F3":
+                   peliculaencache[0].ASIENTOS.F3.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.F3.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.F3.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "F4":
+                   peliculaencache[0].ASIENTOS.F4.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.F4.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.F4.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "G1":
+                   peliculaencache[0].ASIENTOS.G1.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.G1.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.G1.SECCION= document.getElementById("seccion").value;
+                   break;
+               case "G2":
+                   peliculaencache[0].ASIENTOS.G2.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.G2.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.G2.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "G3":
+                   peliculaencache[0].ASIENTOS.G3.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.G3.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.G3.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "G4":
+                   peliculaencache[0].ASIENTOS.G4.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.G4.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.G4.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "H1":
+                   peliculaencache[0].ASIENTOS.H1.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.H1.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.H1.SECCION= document.getElementById("seccion").value;
+                   break;
+               case "H2":
+                   peliculaencache[0].ASIENTOS.H2.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.H2.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.H2.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "H3":
+                   peliculaencache[0].ASIENTOS.H3.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.H3.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.H3.SECCION= document.getElementById("seccion").value;
+                   break;
+                   case "H4":
+                   peliculaencache[0].ASIENTOS.H4.NOMBREESTUDIANTE= document.getElementById("name").value;
+                    peliculaencache[0].ASIENTOS.H4.CARNET= document.getElementById("carne").value;
+                    peliculaencache[0].ASIENTOS.H4.SECCION= document.getElementById("seccion").value;
+                   break;
+                   //escribir el resto de los casos, para cada una de las butacas
+var peliculaseleccionada= JSON.parse(localStorage.getItem("peliculaseleccionada"));
+     if(peliculaseleccionada[0].ASIENTOS.A1.CARNET != null)
+         {
+             document.getElementById("A1").style.backgroundColor = "gray";
+              document.getElementById("A1").disabled = true;
+         }
+        
+         if(peliculaseleccionada[0].ASIENTOS.A2.CARNET != null)
+         {
+             document.getElementById("A2").style.backgroundColor = "gray";
+              document.getElementById("A2").disabled = true;
+         }
+         if(peliculaseleccionada[0].ASIENTOS.A3.CARNET != null)
+         {
+             document.getElementById("A3").style.backgroundColor = "gray";
+              document.getElementById("A3").disabled = true;
+         }
+              if(peliculaseleccionada[0].ASIENTOS.A4.CARNET != null)
+         {
+             document.getElementById("A4").style.backgroundColor = "gray";
+              document.getElementById("A4").disabled = true;
+         }
+        
+         if(peliculaseleccionada[0].ASIENTOS.A5.CARNET != null)
+         {
+             document.getElementById("A5").style.backgroundColor = "gray";
+              document.getElementById("A5").disabled = true;
+         }
+         if(peliculaseleccionada[0].ASIENTOS.A6.CARNET != null)
+         {
+             document.getElementById("A6").style.backgroundColor = "gray";
+              document.getElementById("A6").disabled = true;
+         }
+         if(peliculaseleccionada[0].ASIENTOS.B1.CARNET != null)
+         {
+             document.getElementById("B1").style.backgroundColor = "gray";
+              document.getElementById("B1").disabled = true;
+         }
+        
+         if(peliculaseleccionada[0].ASIENTOS.B2.CARNET != null)
+         {
+             document.getElementById("B2").style.backgroundColor = "gray";
+              document.getElementById("B2").disabled = true;
+         }
+         if(peliculaseleccionada[0].ASIENTOS.B3.CARNET != null)
+         {
+             document.getElementById("B3").style.backgroundColor = "gray";
+              document.getElementById("B3").disabled = true;
+         }
+              if(peliculaseleccionada[0].ASIENTOS.B4.CARNET != null)
+         {
+             document.getElementById("B4").style.backgroundColor = "gray";
+              document.getElementById("B4").disabled = true;
+         }
+        
+         if(peliculaseleccionada[0].ASIENTOS.B5.CARNET != null)
+         {
+             document.getElementById("B5").style.backgroundColor = "gray";
+              document.getElementById("B5").disabled = true;
+         }
+         if(peliculaseleccionada[0].ASIENTOS.B6.CARNET != null)
+         {
+             document.getElementById("B6").style.backgroundColor = "gray";
+              document.getElementById("B6").disabled = true;
+         }
+         if(peliculaseleccionada[0].ASIENTOS.C1.CARNET != null)
+         {
+             document.getElementById("C1").style.backgroundColor = "gray";
+              document.getElementById("C1").disabled = true;
+         }
+        
+         if(peliculaseleccionada[0].ASIENTOS.C2.CARNET != null)
+         {
+             document.getElementById("C2").style.backgroundColor = "gray";
+              document.getElementById("C2").disabled = true;
+         }
+         if(peliculaseleccionada[0].ASIENTOS.C3.CARNET != null)
+         {
+             document.getElementById("C3").style.backgroundColor = "gray";
+              document.getElementById("C3").disabled = true;
+         }
+              if(peliculaseleccionada[0].ASIENTOS.C4.CARNET != null)
+         {
+             document.getElementById("C4").style.backgroundColor = "gray";
+              document.getElementById("C4").disabled = true;
+         }
+        
+         if(peliculaseleccionada[0].ASIENTOS.C5.CARNET != null)
+         {
+             document.getElementById("C5").style.backgroundColor = "gray";
+              document.getElementById("C5").disabled = true;
+         }
+         if(peliculaseleccionada[0].ASIENTOS.C6.CARNET != null)
+         {
+             document.getElementById("C6").style.backgroundColor = "gray";
+              document.getElementById("C6").disabled = true;
+         }
+         if(peliculaseleccionada[0].ASIENTOS.D1.CARNET != null)
+         {
+             document.getElementById("D1").style.backgroundColor = "gray";
+              document.getElementById("D1").disabled = true;
+         }
+        
+         if(peliculaseleccionada[0].ASIENTOS.D2.CARNET != null)
+         {
+             document.getElementById("D2").style.backgroundColor = "gray";
+              document.getElementById("D2").disabled = true;
+         }
+         if(peliculaseleccionada[0].ASIENTOS.D3.CARNET != null)
+         {
+             document.getElementById("D3").style.backgroundColor = "gray";
+              document.getElementById("D3").disabled = true;
+         }
+              if(peliculaseleccionada[0].ASIENTOS.D4.CARNET != null)
+         {
+             document.getElementById("D4").style.backgroundColor = "gray";
+              document.getElementById("D4").disabled = true;
+         }
+        
+         if(peliculaseleccionada[0].ASIENTOS.D5.CARNET != null)
+         {
+             document.getElementById("D5").style.backgroundColor = "gray";
+              document.getElementById("D5").disabled = true;
+         }
+        if(peliculaseleccionada[0].ASIENTOS.E1.CARNET != null)
+         {
+             document.getElementById("E1").style.backgroundColor = "gray";
+              document.getElementById("E1").disabled = true;
+         }
+        
+         if(peliculaseleccionada[0].ASIENTOS.E2.CARNET != null)
+         {
+             document.getElementById("E2").style.backgroundColor = "gray";
+              document.getElementById("E2").disabled = true;
+         }
+         if(peliculaseleccionada[0].ASIENTOS.E3.CARNET != null)
+         {
+             document.getElementById("E3").style.backgroundColor = "gray";
+              document.getElementById("E3").disabled = true;
+         }
+              if(peliculaseleccionada[0].ASIENTOS.E4.CARNET != null)
+         {
+             document.getElementById("E4").style.backgroundColor = "gray";
+              document.getElementById("E4").disabled = true;
+         }
+         if(peliculaseleccionada[0].ASIENTOS.F1.CARNET != null)
+         {
+             document.getElementById("F1").style.backgroundColor = "gray";
+              document.getElementById("F1").disabled = true;
+         }
+        
+         if(peliculaseleccionada[0].ASIENTOS.F2.CARNET != null)
+         {
+             document.getElementById("F2").style.backgroundColor = "gray";
+              document.getElementById("F2").disabled = true;
+         }
+         if(peliculaseleccionada[0].ASIENTOS.F3.CARNET != null)
+         {
+             document.getElementById("F3").style.backgroundColor = "gray";
+              document.getElementById("F3").disabled = true;
+         }
+              if(peliculaseleccionada[0].ASIENTOS.F4.CARNET != null)
+         {
+             document.getElementById("F4").style.backgroundColor = "gray";
+              document.getElementById("F4").disabled = true;
+         }
+        if(peliculaseleccionada[0].ASIENTOS.G1.CARNET != null)
+         {
+             document.getElementById("G1").style.backgroundColor = "gray";
+              document.getElementById("G1").disabled = true;
+         }
+        
+         if(peliculaseleccionada[0].ASIENTOS.G2.CARNET != null)
+         {
+             document.getElementById("G2").style.backgroundColor = "gray";
+              document.getElementById("G2").disabled = true;
+         }
+         if(peliculaseleccionada[0].ASIENTOS.G3.CARNET != null)
+         {
+             document.getElementById("G3").style.backgroundColor = "gray";
+              document.getElementById("G3").disabled = true;
+         }
+              if(peliculaseleccionada[0].ASIENTOS.G4.CARNET != null)
+         {
+             document.getElementById("G4").style.backgroundColor = "gray";
+              document.getElementById("G4").disabled = true;
+         }
+         if(peliculaseleccionada[0].ASIENTOS.H1.CARNET != null)
+         {
+             document.getElementById("H1").style.backgroundColor = "gray";
+              document.getElementById("H1").disabled = true;
+         }
+        
+         if(peliculaseleccionada[0].ASIENTOS.H2.CARNET != null)
+         {
+             document.getElementById("H2").style.backgroundColor = "gray";
+              document.getElementById("H2").disabled = true;
+         }
+         if(peliculaseleccionada[0].ASIENTOS.H3.CARNET != null)
+         {
+             document.getElementById("H3").style.backgroundColor = "gray";
+              document.getElementById("H3").disabled = true;
+         }
+              if(peliculaseleccionada[0].ASIENTOS.H4.CARNET != null)
+         {
+             document.getElementById("H4").style.backgroundColor = "gray";
+              document.getElementById("H4").disabled = true;
+         }
+           }
+    
+    
+    //deben tener linkeado el js de peliculafrontend
+    var peliculainstanciada = new Pelicula(peliculaencache[0]._id,
+                                           peliculaencache[0].NOMBRE,
+    peliculaencache[0].DURACIONMINUTOS,
+    peliculaencache[0].GENERO,
+    peliculaencache[0].IDIOMAAUDIO,
+    peliculaencache[0].IDIOMASUB,
+    peliculaencache[0].SINOPSIS,
+    peliculaencache[0].CLASIFICACION,
+    peliculaencache[0].PRECIO,
+    peliculaencache[0].HORAINICIO,
+    peliculaencache[0].FECHA,
+    peliculaencache[0].MINUTOINICIO,
+    peliculaencache[0].ASIENTOS,
+    peliculaencache[0].IMAGEN,
+    peliculaencache[0].ESTADO
+
+    )
+    
+    peliculainstanciada.Modificar().then(function(response) {
+  console.log("Success!", response);
+            alert("Butaca ha sido reservada campeón");
+            
+}, function(error) {
+  console.error("Failed!", error);
+             alert("Error " + error);
+            
+});
+       
+    
+}
+
+        </script>
+	</body>
+	<script type="text/javascript" src="pelifrontend.js">
+		</script>
+</html>

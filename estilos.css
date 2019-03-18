@@ -1,0 +1,50 @@
+.contenedor{
+	font-size: 25px;
+	text-align: center;
+	background: transparent;
+	margin: auto;
+	margin-top:85px;
+	position:relative;
+	width:65%;
+	height:500px;
+	border:1px solid yellow;
+}
+input{
+	text-align: center;
+	color: yellow;
+	background: transparent;
+	border: 1px solid yellow;	
+
+}
+
+table{
+	
+	margin: auto;
+	text-align: center;
+	background: transparent;
+}
+body {
+  background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
+}}
+.imga{
+    position: absolute;
+    margin-left: 200px;
+}
+#imgpeli{
+
+width: 150px;
+height: 50px;
+ border-color: yellow;
+  background: none;
+  color: yellow;
+  margin: center;
+  text-align: center; 
+}
+.butto{
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 1%;
+}
+h1{
+    font-size: 35px;
+}

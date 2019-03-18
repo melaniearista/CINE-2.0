@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Index </title>
+            <script src="jquery/jquery-3.2.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+    <body>
+    <div class="login">
+  <div class="login-triangle"></div>
+  
+  <img src="iniciar.png" width="350" height="50" class="login-header">
+
+  <section class="login-container">
+    <p><input type="email" id="email" placeholder="Email"></p>
+    <p><input type="password" id="clave" placeholder="Password"></p>
+      <p><button id="sesion" onclick="Login()"value="Log in">Iniciar sesión</button></p>
+  </section>
+</div>
+        <script src="admFront-End.js"></script>
+	<script type="text/javascript">
+        function Login(){
+            administradorinstanciado = new Administrador(0,email,clave,"","","");
+            administradorinstanciado.Login().then(function(response)
+            {
+                alert("Sesión iniciada");
+                localStorage.setItem("Usuariolog",JSON.stringify(response));
+                location.href="Index.html";
+            }),
+            function(error)
+        {
+        Alert(error);
+        }
+        }
+
+		</script>
+        </body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Cinema </title>
+        <script src="jquery/jquery-3.2.1.min.js"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+        	<link rel="stylesheet" type="text/css" href="estilos.css">
+
+</head>
+<header>
+		<div class="menu_bar">
+			<a href="#" class="bt_menu"><span>
+			</span>Agregar</a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="nuevapelicula.html"><span ></span>Agregar</a></li>
+				<li><a href="Calendario.html"><span></span>Calendario</a></li>
+                <li><a href="Butacas.html"><span></span>Butacas</a></li>
+				<li><a href="login.html"><span></span>Iniciar sesión</a></li>
+				<li><a href="registrarse.html"><span></span>Registrarse</a></li>
+				<li><a href=".html"><span></span>Salir</a></li>
+			</ul>
+		</nav>
+	</header>
+	<body>
+	<div class="contenedor">
+		<br>
+		<div class="contenido">
+            <img src="ingresar.png" width="270" height="130">
+			<br>
+			<table>
+			<tr>
+				<td><input class="Nombre" id="Nombre" type="string" placeholder="Nombre"></td> 
+				<td><input class="duracion" id="duracion" type="number" placeholder="Duración" ></td>
+				<td><input class="genero" id="genero" type="string" placeholder="Género"></td>
+				<td><input class="idiomaaudio" id="idiomaaudio" type="string" placeholder="Idioma audio" ></td>
+			</tr>
+			<tr>
+				<td><input class="idiomasub" id="idiomasub" type="string" placeholder="Idioma sub" ></td>
+				<td><input class="sinopsis" id="sinopsis" type="string" placeholder="Sinopsis"></td>
+				<td><input class="clasificacion" id="clasificacion" type="string" placeholder="Clasificación"></td>
+				<td><input class="precio" id="precio" type="number" placeholder="Precio"></td>
+			</tr>
+                <tr>
+				<td><input class="hora" id="hora" type="number" placeholder="Hora"></td>
+				<td><input class="fecha" id="fecha" type="date" placeholder="Fecha"></td>
+				<td><input class="minuto" id="minuto" type="number" placeholder="Minuto"></td>
+				<td><input class="estado" id="estado" type="number" placeholder="Estado"></td>
+			</tr>
+                <tr class="imga">
+                	<td><br></td>
+
+                <td><input class="imagen" #inp id="imgpeli" type="file" placeholder="Imagen"></td>
+                </tr>
+                <tr class="butto">
+                <td><button id="imgpeli" onclick="botonguardarclick()">Ingresar</button></td>
+                </tr>
+		</table>
+	</div>
+        </div>
+	</body>
+	<script type="text/javascript" src="pelifrontend.js">
+        function(cok){
+            if(localstorage.getItem("Usuariolog")==null)
+                {
+                    location.href = "Login.html"
+                }
+        }
+		</script>
+</html>

@@ -1,0 +1,140 @@
+.contenedor{
+	font-size: 16px;
+	text-align: center;
+	background: transparent;
+	margin: auto;
+	margin-top:65px;
+	position:relative;
+	width:42%;
+	height:700px;
+	border:1px solid yellow;
+    color: aliceblue
+}
+input{
+	text-align: center;
+	background: black;
+	border: 1px solid black;	
+}
+#t1{
+    cursor: pointer;
+    position: absolute;
+	left: 40px;
+	text-align: center;
+}
+body{
+  background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
+    font-family: 'Cabin', sans-serif;
+}
+.imga{
+    position: absolute;
+    margin-left: 200px;
+}
+.butto{
+    margin-top: 80px;
+    position: absolute;
+    margin-left: 310px;
+}
+h1{
+    font-size: 35px;
+}
+#t2{
+    cursor: pointer;
+    position: absolute;
+	left: 400px;
+	text-align: center;
+    margin-top: 220px;
+}
+#titulodelapelicula{
+    color: aliceblue;
+    text-align: center;
+}
+#c1{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 550px;
+    width: 20%;
+    height: 60px;
+}
+#botondelpop1{
+	text-align: center;
+	border: none;
+	border-bottom: 1px solid #5497B5;
+    height: 25px;	
+}
+#botondelpop2{
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #5497B5;
+    height: 25px;   
+}
+#botondelpop3{
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #5497B5;
+    height: 25px;   
+}
+#nombredelacasilla{
+    font-size: 18px;
+}
+#Asiento{
+    font-size: 30px;    
+      color: black;
+}
+
+#t1{
+    cursor: pointer;
+    position: absolute;
+	left: 40px;
+	text-align: center;
+}
+body{
+  background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
+    font-family: 'Cabin', sans-serif;
+}
+.imga{
+    position: absolute;
+    margin-left: 200px;
+}
+.butto{
+    margin-top: 80px;
+    position: absolute;
+    margin-left: 310px;
+}
+h1{
+    font-size: 35px;
+}
+#t2{
+    cursor: pointer;
+    position: absolute;
+	left: 400px;
+	text-align: center;
+    margin-top: 220px;
+} 
+.popup{
+    
+    position: absolute;
+    top: 150px;
+    left:450px;
+    height: 300px;
+    width: 400PX;
+
+    background-color: #c6a155;
+}
+.numero{
+   
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    
+}
+.datodelpop{
+        text-align: center;
+    
+}
+#bb{
+    width: 65px;
+    height: 30px;
+    background:black;
+    color: aliceblue;
+
+}

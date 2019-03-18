@@ -1,0 +1,215 @@
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+var pelicula = new Schema({
+"NOMBRE":String,
+"DURACIONMIN":Number,
+"GENERO":String,
+"IDIOMAUDIO":String,
+"IDIOMASUB":String,
+"SINOPSIS":String,
+"CLASIFICACION":String,
+"PRECIO":Number,
+"HORAINICIO":Number,
+"FECHA":Date,
+"MINUTOINICIO":Number,
+"ASIENTOS":{
+  "A1":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "A2":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "A3":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "A4":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "A5":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+       
+   "A6":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "B1":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "B2":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "B3":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "B4":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "B5":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "B6":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+"C1":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "C2":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "C3":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "C4":{
+     "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "C5":{
+     "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "C6":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+"D1":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "D2":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "D3":{
+     "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "D4":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "D5":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "E1":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "E2":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "E3":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "E4":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+    "F1":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "F2":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "F3":{
+     "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "F4":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+"G1":{
+     "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "G2":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "G3":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "G4":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+"H1":{
+     "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "H2":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "H3":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+   "H4":{
+      "NOMBRESTUDIANTE":String,
+       "SECCION":String,
+        "CARNET":Number,
+       },
+"IMAGEN":String,
+"ESTADO":Number,
+});
+module.exports = mongoose.model('Pelicula',pelicula);
