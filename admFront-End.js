@@ -1,4 +1,4 @@
-        class Administrador {
+   class administrador{
    constructor(
         NOMBRE,
         CLAVE,
@@ -23,38 +23,7 @@ Guardar() {  //Guarda una pelicula
       try {
            
                var xhr = new XMLHttpRequest();
-xhr.open('POST', 'http://localhost:8080/api/nuevoadm');
-xhr.setRequestHeader('Content-Type', 'application/json');
-xhr.onload = function() {
-    if (xhr.status === 200) {
-        resolve(JSON.parse(xhr.responseText));
-    }
-    else
-        {
-           reject(xhr); 
-        }
-};
-xhr.send(JSON.stringify(objetoaenviar));   
-          
-          
-          
-}
-catch(err) {
-     reject(err.message);
-
-}
-    });
-}
-            Login() {  //Guarda una pelicula
-   var objetoaenviar = this;
-  // Return a new promise.
-  return new Promise(function(resolve, reject) {
-    // Do the usual XHR stuff
-       
-      try {
-           
-               var xhr = new XMLHttpRequest();
-xhr.open('POST', 'http://localhost:8080/api/loginadm');
+xhr.open('POST', 'https://localhost:8080/api/nuevoadm');
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.onload = function() {
     if (xhr.status === 200) {
@@ -87,7 +56,7 @@ catch(err) {
       try {
            
                var xhr = new XMLHttpRequest();
-xhr.open('POST', 'http://localhost:8080/api/Modificapelicula');
+xhr.open('POST', 'https://localhost:808/api/Modificapelicula');
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.onload = function() {
     if (xhr.status === 200) {
@@ -122,7 +91,7 @@ catch(err) {
       try {
            
                var xhr = new XMLHttpRequest();
-xhr.open('POST', 'http://localhost:8080/api/Eliminapelicula');
+xhr.open('POST', 'https://localhost:808/api/Eliminapelicula');
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.onload = function() {
     if (xhr.status === 200) {
@@ -156,7 +125,7 @@ Seleccionartodos() {  //Selecciona todos los elementos
       try {
            
                var xhr = new XMLHttpRequest();
-xhr.open('POST', 'http://localhost:8080/api/seleccionartodos');
+xhr.open('POST', 'https://localhost:808/api/seleccionartodos');
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.onload = function() {
     if (xhr.status === 200) {
@@ -191,7 +160,7 @@ catch(err) {
       try {
            
                var xhr = new XMLHttpRequest();
-xhr.open('POST', 'http://localhost:8080/api/seleccionarporfecha');
+xhr.open('POST', 'https://localhost:808/api/seleccionarporfecha');
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.onload = function() {
     if (xhr.status === 200) {
@@ -216,7 +185,7 @@ catch(err) {
     
 }
     
-    Seleccionarporid() {  //Lama a los objetos mediante su id
+    Seleccionarporid() {  //Por el id llama a los objetos
 	
       var objetoaenviar = this;
   // Return a new promise.
@@ -226,7 +195,7 @@ catch(err) {
       try {
            
                var xhr = new XMLHttpRequest();
-xhr.open('POST', 'http://localhost:8080/api/seleccionarpeliculaporid');
+xhr.open('POST', 'https://localhost:808/api/seleccionarpeliculaporid');
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.onload = function() {
     if (xhr.status === 200) {
@@ -262,7 +231,7 @@ catch(err) {
       try {
            
                var xhr = new XMLHttpRequest();
-xhr.open('POST', 'http://localhost:8080/api/seleccionarpornombre');
+xhr.open('POST', 'https://localhost:808/api/seleccionarpornombre');
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.onload = function() {
     if (xhr.status === 200) {
@@ -285,48 +254,43 @@ catch(err) {
     });
     
 }
-            
-            
-   peliculaspormesyanno(mes,anno)
-            { //Este proceso recoje el mes y el año ingresados
-                var objetoaenviar = this; //Iguala el obejto a si mismo
-                var vectordepeliculasfiltradas = [];
-                //Return a new promise
-                return new Promise(function(resolve,reject){
-                    //Do the usual XHR stuff
-                   try{
-                       var xhr = new XMLHttpRequest();
-                       xhr.open('POST','http://localhost:8080/api/seleccionarpelicula');
-                       xhr.setRequestHeader('Content-Type', 'application/json');
-                       xhr.onload = function(){
-                            if(xhr.status === 200){
-                                var peliculas = JSON.parse(xhr.responseText);
-                                
-                                for(var elemento in peliculas){
-                                    var fechadelapelicula = new Date(peliculas[elemento].FECHA);
-                                    if((fechadelapelicula.getMonth()+1 == mes) && (fechadelapelicula.getFullYear() == anno)){ //Ciclo para recoger los datos
-                                        vectordepeliculasfiltradas.push(peliculas[elemento]);
-                                    }
-                                }
-                                    resolve(vectordepeliculasfiltradas);
-                            }   
-                                else
-                                    {
-                                        reject(xhr);
-                                    }
-                                
-                        };
-                       xhr.send(JSON.stringify(objetoaenviar));
-                   }
-                       catch(err){
-                           reject(err.message);
-                       }
-                });
-            }
+       
+       Login() {  //Guarda una pelicula
+   var objetoaenviar = this;
+  // Return a new promise.
+  return new Promise(function(resolve, reject) {
+    // Do the usual XHR stuff
+       
+      try {
+           
+               var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://localhost:808/api/loginadm');
+xhr.setRequestHeader('Content-Type', 'application/json');
+xhr.onload = function() {
+    if (xhr.status === 200) {
+        resolve(JSON.parse(xhr.responseText));
+    }
+    else
+        {
+           reject(xhr); 
+        }
+};
+xhr.send(JSON.stringify(objetoaenviar));   
+          
+          
+          
+}
+catch(err) {
+     reject(err.message);
+
+}
+    });
+}
+
 }
             
 let imagenenbase64 = "";  //Guarda una imagen convirtiendola en texto
-      $("#imgper").change(function(){
+      $("#file").change(function(){
        readURL(this);
  });
     
@@ -350,17 +314,16 @@ let imagenenbase64 = "";  //Guarda una imagen convirtiendola en texto
 
              
             
-        function botonguardar() //Funcion que ingresa los datos solicitados a la base de mongodb
+        function botonguardarclick() //Funcion que ingresa los datos solicitados a la base de mongodb
             {
-                var administradorinstanciado = new Administrador(
-                document.getElementById("Nombre").value,
-                         document.getElementById("clave").value,
-                 document.getElementById("email").value,
-           
-          imagenenbase64,"",""
+                var perfilinstanciado = new administrador(
+                document.getElementById("name").value,
+                document.getElementById("pass").value,
+                document.getElementById("mail").value,
+                imagenenbase64,"",""
                 );
                                                         
-                administradorinstanciado.Guardar().then(function(response) {
+                perfilinstanciado.Guardar().then(function(response) {
   console.log("Success!", response);
             alert("Guardado con exito");
               
@@ -371,3 +334,35 @@ let imagenenbase64 = "";  //Guarda una imagen convirtiendola en texto
 });                                       
                                                         
             }
+function botoniniciar() //Funcion que ingresa los datos solicitados a la base de mongodb
+            {
+                var cladministradorinstanciado = new administrador(
+                    "",
+                    document.getElementById("pass").value,
+                    document.getElementById("mail").value,
+                    "",
+                    "",
+                    ""
+                );                                    
+            cladministradorinstanciado.Login().then(function(response) {
+            console.log("Success!", response);
+            alert("Bienvenido");
+            localStorage.setItem("Usuariocl",JSON.stringify(response));
+            location.href = "menu.html";
+              
+}, function(error) {
+  console.error("Failed!", error);
+             alert("Error " + error);
+           
+});                                       
+                                                        
+            }
+
+
+
+function rev(){
+   if(localStorage.getItem("Usuariocl")==null) {
+       alert("No has iniciado secion");
+       location.href = "Log-in.html";
+   }
+}

@@ -1,0 +1,81 @@
+*{
+    margin: auto;
+    padding: 0;
+}
+body{
+    background:url("img/star.jpg") ; 
+background-size: cover;
+}
+.Cuerpo{
+    width: 80%;
+    height: 630px;
+background:url("img/star.jpg") ; 
+background-size: cover;
+    margin: auto;
+    border:1px solid yellow;
+}
+
+.Cabecera{
+    margin: auto;
+    text-align: center;
+    height: 100px;
+    border-bottom: 2px solid #BABABA;
+    color: #515151;
+}
+
+.Titulo{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+}
+
+.Datos{
+    margin: auto;
+    margin-top: 30px;
+}
+
+.Dato{
+    margin-left: 40px;        
+    text-align: center;
+    font-family: Noto Sans;
+}
+
+.But{
+    margin: auto;
+    width: 100px;
+    height: 60px;
+    font-family: Roboto;
+    font-size: 15px;
+    border-radius: 1px;
+    border:1px solid yellow;
+    background-color: transparent;
+    margin-left: 38px;
+    color: yellow;
+}
+
+.But:hover{
+    cursor: pointer;
+    background: #E56A6A;
+}
+
+input{
+    border: 1px solid yellow;
+    text-align: center;
+    color: white;
+    height: 25px;
+    background-color: transparent;
+}
+
+tr{
+    height: 90px;
+}
+
+.caja{
+    text-align: center;
+}
+.imagen{
+    height: 30px;
+    width: 450px;
+}

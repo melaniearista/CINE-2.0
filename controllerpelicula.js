@@ -1,10 +1,10 @@
-var Item = require('./pelicula');
-module.exports = class _Pelicula {
+var Item = require('./pelicula'); // Trae todo lo que está en pelicula.js
+module.exports = class _Pelicula { 
    constructor( ) {
 
    }
-Guardar(req,res) {
-	Item.create(//crea todos esos datos y los almacena
+Guardar(req,res) { // Guarda los datos segun los campos.
+	Item.create(
 			{
   NOMBRE: req.body.NOMBRE,
     DURACIONMINUTOS: req.body.DURACIONMINUTOS,
@@ -21,16 +21,16 @@ Guardar(req,res) {
     IMAGEN: req.body.IMAGEN,
     ESTADO: req.body.ESTADO
             }, 
-			function(err, item) {
+			function(err, item) {    
 				if (err)
                     {
-					res.send(err);}//Envia el error
+					res.send(err);}
 				
           else{
-                Item.find(function(err, item) {
+                Item.find(function(err, item) {     // Nos dice si la peli está activa
 				 	if (err)
 				 		res.send(err)
-				  res.json(item);//
+				  res.json(item);
 				});
                 
                 
@@ -43,8 +43,8 @@ Guardar(req,res) {
 }
     
  Modificar(req,res) {
-		Item.update( {_id : req.body._id},//modifica el guardado anterior
-					{$set://y lo setea
+		Item.update( {_id : req.body._id},
+					{$set:
 			{
    NOMBRE: req.body.NOMBRE,
     DURACIONMINUTOS: req.body.DURACIONMINUTOS,
@@ -82,8 +82,8 @@ Guardar(req,res) {
     
 }   
     
-    Eliminar(req,res) {
-	Item.remove({_id : req.body.id}, //elimina los datos
+    Eliminar(req,res) {  //Proceso para eliminar datos buscados por su id
+	Item.remove({_id : req.body.id}, 
 			function(err, item) {
 				if (err)
                     {
@@ -104,7 +104,7 @@ Guardar(req,res) {
     
     
 }
-Seleccionartodos(req,res) {
+Seleccionartodos(req,res) { //Proceso que selecciona todos los datos introducidos
 		Item.find(
 		function(err, item) {
 			if (err)
@@ -124,7 +124,7 @@ Seleccionartodos(req,res) {
     
 }
     
-    Seleccionarporfecha(req,res) { //elige basado en la fecha
+    Seleccionarporfecha(req,res) {  //Busca los objetos con la misma fecha introducida
 	Item.find({FECHA:req.body.FECHA}, function(err, item) {
 			if (err){
 				res.send(err)}
@@ -147,7 +147,7 @@ Seleccionartodos(req,res) {
     
 }
     
-    Seleccionarporid(req,res) {
+    Seleccionarporid(req,res) {  //Busca objetos con una id especifica
 	Item.find({_id:req.body._id}, function(err, item) {
 			if (err){
 				res.send(err)}
@@ -169,7 +169,7 @@ Seleccionartodos(req,res) {
     
 }
     
-    Seleccionarpornombre(req,res) {
+    Seleccionarpornombre(req,res) {  //Busca objetos por su nombre
 	Item.find({NOMBRE:req.body.NOMBRE}, function(err, item) {
 			if (err){
 				res.send(err)}

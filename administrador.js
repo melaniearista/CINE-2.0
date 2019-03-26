@@ -6,7 +6,6 @@ var adm = new Schema({
     CLAVE: String,
     EMAIL: String,
     IMAGEN: String,
-    ESTADO: Number,
     SALT: String
 });
 
@@ -18,7 +17,7 @@ adm.methods.setPassword = function(password){
     console.log(password);
     var claveysalt = [];
     
-    claveysalt.push(crypto.pbkdf2Sync(password, salt, 1000, 64, 'sha512').toString('hex'));
+    claveysalt.push(crypto.pbkdf2Sync(password,salt,1000,64, 'sha512').toString('hex'));
     claveysalt.push(salt);
     return claveysalt;
 };

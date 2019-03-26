@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Log-in.css">
+ <link rel="stylesheet" type="text/css" href="cotidia2.css"> <link rel="stylesheet" type="text/css" href="estilo-menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli|Roboto" rel="stylesheet">
+	<title>Iniciar sesión</title>
+</head>
+<body>
+<section class="contenedortt">
+
+        <div class="linkstt" id="links">
+            <table class="tabla-linkstt">
+                <tr>
+                    <td class="td-links1" onclick="menu()"><span class="texttt">Menú</span></td>
+                    <td class="td-links1" onclick="agregar()"><span class="texttt">Agregar</span></td>
+                    <td class="td-links2" onclick="calendario()"><span class="texttt">Calendario</span></td>
+                    <td class="td-links3" onclick="login()"><span class="texttt">Iniciar sesión</span></td>
+                    <td class="td-links1" onclick="registrarse()"><span class="texttt">Registarse</span></td>
+                    <td class="td-links4" onclick="salir()"><span class="texttt">Salir</span></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="contenedor">
+        <div class="caja-datos">
+            <div class="header">
+                <img src="img/iniciar.png" width="100" height="50">
+            </div>
+            <div class="cuerpo">
+                <div class="dato1">
+                    <input class="text" placeholder="EMAIL" id="mail">
+                </div>
+                <div class="dato2">
+                    <input type="password" class="text" placeholder="CONTRASEÑA" id="pass">
+                </div>
+                <div class="bottom">
+                    <button class="boton" onclick="botoniniciar()">INICIAR SESIÓN</button> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="admFront-End.js"></script>
+    <script src="salir.js"></script>
+    <script src="links.js"></script>
+</body>
+</html>

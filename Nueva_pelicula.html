@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="estilo-agregar.css">
+    <link rel="stylesheet" type="text/css" href="estilo-menu.css">
+     <link rel="stylesheet" type="text/css" href="cotidia2.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto|Ubuntu" rel="stylesheet">
+	<title>Nueva Pelicula</title>
+</head>
+ 
+<body onload="rev()">
+        <section class="contenedortt">
+
+        <div class="linkstt" id="links">
+            <table class="tabla-linkstt">
+                <tr>
+                    <td class="td-links1" onclick="menu()"><span class="texttt">Menú</span></td>
+                    <td class="td-links1" onclick="agregar()"><span class="texttt">Agregar</span></td>
+                    <td class="td-links2" onclick="calendario()"><span class="texttt">Calendario</span></td>
+                    <td class="td-links3" onclick="login()"><span class="texttt">Iniciar sesión</span></td>
+                    <td class="td-links1" onclick="registrarse()"><span class="texttt">Registarse</span></td>
+                    <td class="td-links4" onclick="salir()"><span class="texttt">Salir</span></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="Cuerpo">
+            <div class="imagen">
+             <img src="img/ingresar.png">
+       </div>
+        <div class="Datos">
+            <table>
+                <tr>
+                    <td>
+                        <div class="Dato">
+                           <input class="text" type="text" id="name" placeholder="NOMBRE">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="Dato">
+                           <input class="text" type="number" id="precio" placeholder="PRECIO" >
+                        </div>
+                    </td>
+                </tr>
+                <TR>
+                    <td>
+                        <div class="Dato">
+                            <input class="text" type="date" placeholder="FECHA" id="date">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="Dato">
+                            <input class="text" type="number" placeholder="CANTIDAD" id="cantidad">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div class="Dato">
+                            <input class="text" type="file" placeholder="IMAGEN" id="imgpeli">
+                        </div>
+                    </td>
+                    <td class="caja">
+                        <button class="But" id="boton" onclick="botonguardarclick()"> AGREGAR PELÍCULA </button>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+    </section>
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="links.js"></script>
+    <script src="salir.js"></script>
+    <script src="DatosFront-end.js"></script>
+</body>
+</html>

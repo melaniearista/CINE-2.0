@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="calendario.css">
+    <link rel="stylesheet" type="text/css" href="estilo-menu.css">
+	<title>Taquilla</title>
+</head>
+<body onload="cargarpeliculasdelmesyanno()">
+    <section class="contenedortt">
+
+        <div class="linkstt" id="links">
+            <table class="tabla-linkstt">
+                <tr>
+                    <td class="td-links1" onclick="menu()"><span class="texttt">Menú</span></td>
+                    <td class="td-links1" onclick="agregar()"><span class="texttt">Agregar</span></td>
+                    <td class="td-links2" onclick="calendario()"><span class="texttt">Calendario</span></td>
+                    <td class="td-links3" onclick="login()"><span class="texttt">Iniciar sesión</span></td>
+                    <td class="td-links1" onclick="registrarse()"><span class="texttt">Registarse</span></td>
+                    <td class="td-links4" onclick="salir()"><span class="texttt">Salir</span></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+<table>
+  <summary><strong>Febrero</strong> 2019</summary>
+  <thead>
+    <tr>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
+      <th>Sun</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>
+      <span class="date" id="febrero25">25</span>
+    </td>
+    <td>
+      <span class="date" id="febrero26">26</span>
+    </td>
+    <td>
+      <span class="date" id="febrero27">27</span>
+    </td>
+    <td>
+      <span class="date" id="febrero28">28</span>
+    </td>
+    <td>
+      <span class="date" id="marzo1">1</span>
+    </td>
+    <td class="weekend">
+      <span class="date" id="marzo2">2</span>
+    </td>
+    <td class="weekend">
+      <span class="marzo3">3</span>
+    </td>
+  </tr>
+  <tr class="previous-week">
+    <td>
+      <span class="date" id="marzo4">4</span>
+    </td>
+    <td>
+      <span class="date" id="marzo5">5</span>
+    </td>
+    <td>
+      <span class="date" id="marzo6">6</span>
+    </td>
+    <td>
+      <span class="date" id="marzo7">7</span>
+    </td>
+    <td>
+      <span class="date" id="marzo8">8</span>
+    </td>
+    <td class="weekend">
+      <span class="date" id="marzo9">9</span>
+    </td>
+    <td class="weekend">
+      <span class="date" id="marzo10">10</span>
+    </td>
+  </tr>
+  <tr class="current-week">
+    <td>
+      <span class="date" id="marzo11">11</span>
+    </td>
+    <td>
+      <span class="date" id="marzo12">12</span>
+    </td>
+    <td>
+      <span class="date" id="marzo13">13</span>
+    </td>
+    <td>
+      <span class="date" id="marzo14">14</span>
+    </td>
+    <td class="current-day">
+      <span class="date" id="marzo15">15</span>
+    </td>
+    <td class="weekend">
+      <span class="date" id="marzo16">16</span>
+    </td>
+    <td class="weekend">
+      <span class="date" id="marzo17">17</span>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <span class="date" id="marzo18">18</span>
+    </td>
+    <td>
+      <span class="date" id="marzo19">19</span>
+    </td>
+    <td>
+      <span class="date" id="marzo20">20</span>
+    </td>
+    <td>
+      <span class="date" id="marzo21">21</span>
+    </td>
+    <td>
+      <span class="date" id="marzo22">22</span>
+    </td>
+    <td class="weekend">
+      <span class="date" id="marzo23">23</span>
+    </td>
+    <td class="weekend">
+      <span class="date" id="marzo24">24</span>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <span class="date" id="marzo25">25</span>
+    </td>
+    <td>
+      <span class="date" id="marzo26">26</span>
+    </td>
+    <td>
+      <span class="date" id="marzo27">27</span>
+    </td>
+    <td>
+      <span class="date" id="marzo28">28</span>
+    </td>
+    <td>
+      <span class="date" id="marzo29">29</span>
+    </td>
+    <td class="weekend">
+      <span class="date" id="marzo30">30</span>
+    </td>
+    <td class="weekend">
+      <span class="date" id="marzo31">31</span>
+    </td>
+  </tr>
+</table>
+    <div class="caja">
+    <span id="mesactual" value="3" style="color: white">2</span>
+    <span id="annoactual" value="2019" style="color: white">2019</span>
+    </div>
+<script src="DatosFront-end.js"></script>
+<script>
+    function agregaimgdepeliculaaldiv(imgenbase64,iddeldiv,iddelapelicula)  //  Primero llega a la funcion de abajo cargarpeliculasdelmesyanno
+
+    {
+        document.getElementById('marzo'+iddeldiv).innerHTML += "<img src='"+imgenbase64+"' height='42' width='42' id= "+iddelapelicula+" onclick='cargataquilla(\""+iddelapelicula+"\")' class='img'>"; //  El fec dentro del getElementById es porque solo reconoce los numeros y hay que concatenar el fec
+    }
+    
+    function cargarpeliculasdelmesyanno()
+    {
+        let clasepeliculainstanciada = new _Pelicula();
+               clasepeliculainstanciada.peliculaspormesyanno(document.getElementById("mesactual").innerHTML,document.getElementById("annoactual").innerHTML).then(function(response) {
+                   
+ for(var elemento in response)
+     {
+         var fechadelapeliculaactual = new Date(response[elemento].FECHA);
+         agregaimgdepeliculaaldiv(response[elemento].IMAGEN,fechadelapeliculaactual.getDate(),response[elemento]._id);
+         
+     }
+                   
+                   
+                   
+                   
+}, function(error) {
+ console.log(error);
+});
+        
+        
+    }
+</script>
+<script>
+function cargataquilla(id)
+        {
+
+
+             let clasepeliculainstanciada = new _Pelicula(id);
+               clasepeliculainstanciada.Seleccionarporid().then(function(response) {
+
+
+
+               localStorage.setItem("peliculaseleccionada",JSON.stringify(response));
+                location.href="Taquilla.html";
+}, function(error) {
+ console.log(error);
+});
+
+
+
+
+
+        }    
+</script>
+<script src="links.js"></script>
+<script src="salir.js"></script>
+</body>
+</html>
